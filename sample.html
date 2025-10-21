@@ -4,430 +4,1052 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Painting Services in Brampton, Toronto & Ontario | Celestial Painting Inc.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Expert residential & commercial painting services in Brampton, Toronto, and Ontario. Licensed, insured, and guaranteed. Free quotes, 15+ years experience. Call 647-853-1757">
+    <meta name="keywords" content="painting services Brampton, house painters Toronto, commercial painting Ontario, interior painting, exterior painting, cabinet refinishing, residential painters">
+    <meta name="author" content="Celestial Painting Inc.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="CA-ON">
+    <meta name="geo.placename" content="Brampton, Toronto, Ontario">
+    <meta name="geo.position" content="43.68341;-79.76218">
+    <meta name="ICBM" content="43.68341, -79.76218">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celestialpaints.ca/">
+    <meta property="og:title" content="Professional Painting Services in Brampton, Toronto & Ontario | Celestial Painting Inc.">
+    <meta property="og:description" content="Expert residential & commercial painting services. Licensed, insured, and guaranteed. Free quotes, 15+ years experience.">
+    <meta property="og:image" content="https://celestialpaints.ca/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://celestialpaints.ca/">
+    <meta property="twitter:title" content="Professional Painting Services in Brampton, Toronto & Ontario">
+    <meta property="twitter:description" content="Expert residential & commercial painting services. Licensed, insured, and guaranteed. Free quotes, 15+ years experience.">
+    <meta property="twitter:image" content="https://celestialpaints.ca/twitter-image.jpg">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Celestial Painting Inc.",
+        "image": "https://celestialpaints.ca/logo.jpg",
+        "description": "Professional painting services for residential and commercial properties in Brampton, Toronto, and Ontario.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brampton",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.68341,
+            "longitude": -79.76218
+        },
+        "url": "https://celestialpaints.ca",
+        "telephone": "+1-647-853-1757",
+        "email": "celestial.painting.inc@gmail.com",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "16:00"
+            }
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.68341,
+                "longitude": -79.76218
+            },
+            "geoRadius": "50000"
+        },
+        "areaServed": ["Brampton", "Toronto", "Ontario"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Painting Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residential Interior Painting"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residential Exterior Painting"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Commercial Painting"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cabinet Refinishing"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    <link rel="canonical" href="https://celestialpaints.ca/">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#1E3A8A',
+                    secondary: '#F59E0B'
+                },
+                borderRadius: {
+                    'none': '0px',
+                    'sm': '4px',
+                    'DEFAULT': '8px',
+                    'md': '12px',
+                    'lg': '16px',
+                    'xl': '20px',
+                    '2xl': '24px',
+                    '3xl': '32px',
+                    'full': '9999px',
+                    'button': '8px'
+                },
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                }
+            }
+        }
+    }
+    </script>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+    :where([class^="ri-"])::before {
+        content: "\f3c2";
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    .brushstroke-divider {
+        background: linear-gradient(45deg, transparent 30%, #F59E0B 30%, #F59E0B 70%, transparent 70%);
+        height: 4px;
+        margin: 2rem 0;
+    }
+    .hero-overlay {
+        background: linear-gradient(135deg, rgba(30, 58, 138, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+    .form-input {
+        transition: all 0.3s ease;
+    }
+    .form-input:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+    }
+    .highlight-form {
+        position: relative;
+        animation: formHighlight 3s ease-in-out;
+    }
+    .highlight-form::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        background: linear-gradient(45deg, #F59E0B, #1E3A8A, #F59E0B);
+        background-size: 200% 200%;
+        border-radius: 12px;
+        z-index: -1;
+        animation: gradientShift 2s ease-in-out infinite;
+    }
+    @keyframes formHighlight {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
         }
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
+        50% {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px 10px rgba(245, 158, 11, 0.2);
         }
-        .header {
-            background-color: #001233;
-            color: #FFD700;
-            padding: 80px 0;
-            text-align: center;
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
         }
-        .logo {
-            max-width: 400px;
-            margin-bottom: 20px;
+    }
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
         }
-        .gold {
-            color: #FFD700;
+        50% {
+            background-position: 100% 50%;
         }
-        .navy {
-            background-color: #001233;
-            color: #fff;
+        100% {
+            background-position: 0% 50%;
         }
-        .section {
-            padding: 60px 0;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-        .stat-item {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .portfolio-item {
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-        }
-        .process-step {
-            margin-bottom: 30px;
-        }
-        .testimonial {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .form-control {
-            resize: vertical;
-        }
-        footer {
-            background-color: #001233;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        @media (max-width: 768px) {
-            .header {
-                padding: 40px 0;
-            }
-            .section {
-                padding: 40px 0;
-            }
-        }
+    }
     </style>
+    <script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+            return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+            if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+                try {
+                    var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                    var firstSheetName = workbook.SheetNames[0];
+                    var worksheet = workbook.Sheets[firstSheetName];
+                    var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                    var filteredData = jsonData.filter(row => row.some(filledCell));
+                    var headerRowIndex = filteredData.findIndex((row, index) =>
+                        row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                    );
+                    if (headerRowIndex === -1 || headerRowIndex > 25) {
+                        headerRowIndex = 0;
+                    }
+                    var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+                    csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                    return csv;
+                } catch (e) {
+                    console.error(e);
+                    return "";
+                }
+            }
+            return gk_fileData[filename] || "";
+        }
+    </script>
 </head>
-<body>
-
-    <!-- Header -->
-    <header class="header">
-        <img src="logo.png" alt="Celestial Painting Inc. Logo" class="logo"> <!-- Replace with your uploaded logo file path -->
-        <h1>Transform Your Space with Professional Excellence</h1>
-        <p>Bringing precision, artistry, and lasting beauty to every residential and commercial painting project</p>
-    </header>
-
+<body class="bg-white font-inter">
+    <!-- Navigation -->
+    <nav class="absolute top-0 left-0 right-0 z-50 px-4 py-6 lg:px-8 transition-all duration-300" id="navbar">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="text-white text-2xl font-['Pacifico'] tracking-wide">Celestial Painting Inc.</div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-secondary transition-all duration-300 font-medium tracking-wide">Home</a>
+                <a href="#services" class="text-white hover:text-secondary transition-all duration-300 font-medium tracking-wide">Services</a>
+                <a href="#portfolio" class="text-white hover:text-secondary transition-all duration-300 font-medium tracking-wide">Portfolio</a>
+                <a href="#about" class="text-white hover:text-secondary transition-all duration-300 font-medium tracking-wide">About</a>
+                <a href="#contact" class="text-white hover:text-secondary transition-all duration-300 font-medium tracking-wide">Contact</a>
+                <button class="bg-secondary hover:bg-yellow-600 text-white px-6 py-2 !rounded-button font-medium transition-all duration-300 whitespace-nowrap ml-4">Free Quote</button>
+            </div>
+            <button id="mobileMenuBtn" class="lg:hidden text-white hover:text-secondary transition-colors">
+                <div class="w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line text-2xl"></i>
+                </div>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden mt-4 bg-primary/95 backdrop-blur-sm rounded-xl p-6 mx-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-white hover:text-secondary transition-colors font-medium py-2">Home</a>
+                <a href="#services" class="text-white hover:text-secondary transition-colors font-medium py-2">Services</a>
+                <a href="#portfolio" class="text-white hover:text-secondary transition-colors font-medium py-2">Portfolio</a>
+                <a href="#about" class="text-white hover:text-secondary transition-colors font-medium py-2">About</a>
+                <a href="#contact" class="text-white hover:text-secondary transition-colors font-medium py-2">Contact</a>
+                <button class="bg-secondary hover:bg-yellow-600 text-white px-6 py-3 !rounded-button font-medium transition-colors whitespace-nowrap mt-4">Free Quote</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('https://readdy.ai/api/search-image?query=professional%20painter%20in%20white%20coveralls%20applying%20premium%20paint%20to%20pristine%20modern%20interior%20wall%20with%20elegant%20furniture%20and%20natural%20sunlight%20streaming%20through%20floor%20to%20ceiling%20windows%20creating%20bright%20airy%20workspace%20with%20professional%20painting%20equipment%20ladder%20and%20drop%20cloths%20visible%20showcasing%20expert%20craftsmanship&width=1920&height=1080&seq=hero001&orientation=landscape')">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+            <div class="animate-fade-in-up">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+                    Transform Your Space with
+                    <span class="text-secondary block lg:inline">Professional Excellence</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-12 font-light text-blue-100 max-w-3xl mx-auto">
+                    Bringing precision, artistry, and lasting beauty to every residential and commercial painting project
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="bg-secondary hover:bg-yellow-600 text-white px-10 py-4 !rounded-button text-lg font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105 shadow-xl">
+                        <i class="ri-phone-line mr-2"></i>Get Free Quote
+                    </button>
+                    <button id="viewPortfolioBtn" class="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 !rounded-button text-lg font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105">
+                        <i class="ri-image-line mr-2"></i>View Our Work
+                    </button>
+                </div>
+            </div>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="ri-arrow-down-line text-white text-2xl"></i>
+            </div>
+        </div>
+    </section>
     <!-- Services Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Our Expert Services</h2>
-            <p class="text-center mb-5">From residential transformations to commercial projects, we deliver exceptional results with precision and care</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Residential Painting</h3>
-                    <ul>
-                        <li>Interior & Exterior Painting</li>
-                        <li>Premium Cabinet Refinishing</li>
-                        <li>Wall Repairs & Texturing</li>
-                        <li>Crown Molding & Trim Work</li>
-                        <li>Color Consultation</li>
-                    </ul>
+    <section id="services" class="py-24 px-4 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-primary mb-6">Our Expert Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From residential transformations to commercial projects, we deliver exceptional results with precision and care</p>
+                <div class="brushstroke-divider w-24 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-2xl shadow-xl border border-secondary/10 p-10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+                    <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-home-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Residential Painting</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Interior & Exterior Painting</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Premium Cabinet Refinishing</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Wall Repairs & Texturing</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Crown Molding & Trim Work</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Color Consultation</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary hover:bg-blue-700 text-white py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap group-hover:bg-secondary">
+                        Learn More <i class="ri-arrow-right-line ml-2"></i>
+                    </button>
                 </div>
-                <div class="col-md-4">
-                    <h3>Commercial Painting</h3>
-                    <ul>
-                        <li>Office Buildings & Spaces</li>
-                        <li>Retail & Restaurant Painting</li>
-                        <li>Industrial Coatings</li>
-                        <li>Maintenance Contracts</li>
-                        <li>24/7 Emergency Service</li>
-                    </ul>
+                <div class="bg-white rounded-2xl shadow-xl border border-secondary/10 p-10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+                    <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-building-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Commercial Painting</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Office Buildings & Spaces</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Retail & Restaurant Painting</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Industrial Coatings</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Maintenance Contracts</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary hover:bg-blue-700 text-white py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap group-hover:bg-secondary">
+                        Learn More <i class="ri-arrow-right-line ml-2"></i>
+                    </button>
                 </div>
-                <div class="col-md-4">
-                    <h3>Specialty Services</h3>
-                    <ul>
-                        <li>Epoxy Floor Coatings</li>
-                        <li>Venetian Plaster Finishes</li>
-                        <li>Decorative Murals</li>
-                        <li>Faux Finishing Techniques</li>
-                        <li>Wallpaper Installation</li>
-                    </ul>
+                <div class="bg-white rounded-2xl shadow-xl border border-secondary/10 p-10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+                    <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        <i class="ri-palette-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Specialty Services</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Epoxy Floor Coatings</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Venetian Plaster Finishes</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Decorative Murals</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Faux Finishing Techniques</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="ri-check-line text-secondary mr-3"></i>
+                            <span>Wallpaper Installation</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-primary hover:bg-blue-700 text-white py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap group-hover:bg-secondary">
+                        Learn More <i class="ri-arrow-right-line ml-2"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Why Choose Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Why Choose Celestial Painting</h2>
-            <p class="text-center mb-5">Experience the difference that comes with choosing true professionals dedicated to excellence</p>
-            <div class="row mb-5">
-                <div class="col-md-4">
-                    <h3>Licensed & Insured</h3>
-                    <p>Fully licensed, bonded, and insured for your complete peace of mind. We protect your property and investment with comprehensive coverage and liability protection.</p>
-                    <p>License #CPI-2025-001</p>
+    <!-- Why Choose Us Section -->
+    <section class="py-24 px-4 lg:px-8 bg-gradient-to-r from-primary to-blue-800 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-white mb-6">Why Choose Celestial Painting</h2>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">Experience the difference that comes with choosing true professionals dedicated to excellence</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="w-24 h-24 flex items-center justify-center bg-secondary rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                        <i class="ri-shield-check-line text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6">Licensed & Insured</h3>
+                    <p class="text-blue-100 text-lg leading-relaxed">Fully licensed, bonded, and insured for your complete peace of mind. We protect your property and investment with comprehensive coverage and liability protection.</p>
+                    <div class="mt-6 flex justify-center">
+                        <span class="bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium">License #CPI-2025-001</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Quality Guaranteed</h3>
-                    <p>We stand behind our work with a comprehensive satisfaction guarantee. Using only premium Sherwin-Williams and Benjamin Moore paints with expert craftsmanship.</p>
+                <div class="text-center group">
+                    <div class="w-24 h-24 flex items-center justify-center bg-secondary rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                        <i class="ri-award-line text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6">Quality Guaranteed</h3>
+                    <p class="text-blue-100 text-lg leading-relaxed">We stand behind our work with a comprehensive satisfaction guarantee. Using only premium Sherwin-Williams and Benjamin Moore paints with expert craftsmanship.</p>
+                    <div class="mt-6 flex justify-center space-x-2">
+                        <i class="ri-star-fill text-secondary text-xl"></i>
+                        <i class="ri-star-fill text-secondary text-xl"></i>
+                        <i class="ri-star-fill text-secondary text-xl"></i>
+                        <i class="ri-star-fill text-secondary text-xl"></i>
+                        <i class="ri-star-fill text-secondary text-xl"></i>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Punctual & Reliable</h3>
-                    <p>On-time project delivery is our commitment. We respect your schedule and complete every project within the agreed timeframe with minimal disruption.</p>
-                    <p>98% On-Time Completion</p>
+                <div class="text-center group">
+                    <div class="w-24 h-24 flex items-center justify-center bg-secondary rounded-2xl mb-8 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                        <i class="ri-time-line text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6">Punctual & Reliable</h3>
+                    <p class="text-blue-100 text-lg leading-relaxed">On-time project delivery is our commitment. We respect your schedule and complete every project within the agreed timeframe with minimal disruption.</p>
+                    <div class="mt-6">
+                        <span class="bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium">98% On-Time Completion</span>
+                    </div>
                 </div>
             </div>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h4 class="gold">15+</h4>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                    <h4 class="gold">2,500+</h4>
-                    <p>Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                    <h4 class="gold">100%</h4>
-                    <p>Satisfaction Rate</p>
-                </div>
-                <div class="stat-item">
-                    <h4 class="gold">24/7</h4>
-                    <p>Customer Support</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Our Portfolio</h2>
-            <p class="text-center mb-5">See our latest projects and transformations. Each project showcases our commitment to quality and attention to detail.</p>
-            <h3 class="mb-4">Latest Instagram Posts</h3>
-            <p>See our most recent work and behind-the-scenes content</p>
-            <p>Connect with us on Instagram to see our latest work automatically displayed here</p>
-            <p><a href="https://www.instagram.com/celestial_painting_inc/" target="_blank">@celestial_painting_inc</a></p>
-            <ul class="mb-5">
-                <li>Latest residential painting projects and transformations</li>
-                <li>Professional techniques and quality finishes showcase</li>
-                <li>Color consultations and design inspiration</li>
-            </ul>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="placeholder-living-room.jpg" alt="Modern Living Room"> <!-- Replace with actual images -->
-                    <div class="p-3">
-                        <h4>Modern Living Room</h4>
-                        <p>Complete interior transformation</p>
-                        <p>Residential Interior</p>
-                        <p>Premium paint finish with accent walls</p>
+            <div class="mt-20 text-center">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">15+</div>
+                        <div class="text-blue-100">Years Experience</div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder-kitchen.jpg" alt="Kitchen Renovation">
-                    <div class="p-3">
-                        <h4>Kitchen Renovation</h4>
-                        <p>Cabinet refinishing & painting</p>
-                        <p>Cabinet Refinishing</p>
-                        <p>Professional kitchen transformation</p>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">2,500+</div>
+                        <div class="text-blue-100">Projects Completed</div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder-exterior.jpg" alt="Exterior Transformation">
-                    <div class="p-3">
-                        <h4>Exterior Transformation</h4>
-                        <p>Complete house painting</p>
-                        <p>Exterior Painting</p>
-                        <p>Weather-resistant premium finishes</p>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">100%</div>
+                        <div class="text-blue-100">Satisfaction Rate</div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder-bedroom.jpg" alt="Master Bedroom">
-                    <div class="p-3">
-                        <h4>Master Bedroom</h4>
-                        <p>Accent wall & interior painting</p>
-                        <p>Exterior - Before</p>
-                        <p>Custom color consultation</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder-bathroom.jpg" alt="Bathroom Refresh">
-                    <div class="p-3">
-                        <h4>Bathroom Refresh</h4>
-                        <p>Vanity & wall painting</p>
-                        <p>Exterior - Before</p>
-                        <p>Moisture-resistant coatings</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder-office.jpg" alt="Home Office">
-                    <div class="p-3">
-                        <h4>Home Office</h4>
-                        <p>Built-ins & trim painting</p>
-                        <p>Exterior Painting - After</p>
-                        <p>Professional workspace transformation</p>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">24/7</div>
+                        <div class="text-blue-100">Customer Support</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
-    <section class="section navy text-center">
-        <div class="container">
-            <h3 class="gold">Ready to Transform Your Space?</h3>
-            <p>Contact us today for a free consultation and quote</p>
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="py-20 px-4 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-primary mb-6">Our Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">See our latest projects and transformations. Each project showcases our commitment to quality and attention to detail.</p>
+                <div class="flex justify-center items-center space-x-4 mb-8">
+                    <div class="bg-white rounded-full p-1 shadow-md">
+                        <button id="residentialBtn" class="px-6 py-2 rounded-full bg-primary text-white font-medium transition-colors whitespace-nowrap">Residential</button>
+                        <button id="commercialBtn" class="px-6 py-2 rounded-full text-gray-600 hover:text-primary font-medium transition-colors whitespace-nowrap">Commercial</button>
+                        <button id="allBtn" class="px-6 py-2 rounded-full text-gray-600 hover:text-primary font-medium transition-colors whitespace-nowrap">All Projects</button>
+                    </div>
+                    <a href="https://www.instagram.com/celestial_painting_inc/" target="_blank" class="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 font-medium whitespace-nowrap">
+                        <i class="ri-instagram-line mr-2"></i>
+                        Follow Us on Instagram
+                    </a>
+                </div>
+            </div>
+            <!-- Instagram Feed Integration Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Latest Instagram Posts</h3>
+                    <p class="text-gray-600">See our most recent work and behind-the-scenes content</p>
+                </div>
+                <div id="instagramFeed" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="instagram-placeholder bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-8 text-center">
+                        <i class="ri-instagram-line text-4xl text-pink-500 mb-4"></i>
+                        <p class="text-gray-600 mb-4">Connect with us on Instagram to see our latest work automatically displayed here</p>
+                        <a href="https://www.instagram.com/celestial_painting_inc/" target="_blank" class="text-pink-500 hover:text-pink-600 font-medium">@celestial_painting_inc</a>
+                    </div>
+                    <div class="instagram-placeholder bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-8 text-center">
+                        <i class="ri-image-line text-4xl text-pink-500 mb-4"></i>
+                        <p class="text-gray-600 mb-4">Latest residential painting projects and transformations</p>
+                    </div>
+                    <div class="instagram-placeholder bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-8 text-center">
+                        <i class="ri-brush-line text-4xl text-pink-500 mb-4"></i>
+                        <p class="text-gray-600 mb-4">Professional techniques and quality finishes showcase</p>
+                    </div>
+                    <div class="instagram-placeholder bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-8 text-center">
+                        <i class="ri-palette-line text-4xl text-pink-500 mb-4"></i>
+                        <p class="text-gray-600 mb-4">Color consultations and design inspiration</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Gallery -->
+            <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20modern%20living%20room%20interior%20with%20freshly%20painted%20white%20walls%20and%20ceiling%20professional%20residential%20painting%20work%20with%20beautiful%20furniture%20natural%20lighting%20and%20clean%20paint%20finish%20showcasing%20premium%20quality%20craftsmanship&width=400&height=300&seq=res001&orientation=landscape" alt="Living Room Transformation" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Modern Living Room</h4>
+                            <p class="text-sm">Complete interior transformation</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Residential Interior</h3>
+                        <p class="text-gray-600 text-sm">Premium paint finish with accent walls</p>
+                    </div>
+                </div>
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=beautiful%20kitchen%20cabinet%20refinishing%20project%20with%20white%20painted%20cabinets%20modern%20hardware%20brass%20accents%20quartz%20countertops%20professional%20painting%20work%20clean%20finish%20residential%20kitchen%20transformation&width=400&height=300&seq=res002&orientation=landscape" alt="Kitchen Cabinet Refinishing" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Kitchen Renovation</h4>
+                            <p class="text-sm">Cabinet refinishing & painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Cabinet Refinishing</h3>
+                        <p class="text-gray-600 text-sm">Professional kitchen transformation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://static.readdy.ai/image/4aa709d1071c745a0f95e84e800a02b5/58c003696ea042f3d121aa23562dbf80.jfif" alt="House Exterior Painting" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Exterior Transformation</h4>
+                            <p class="text-sm">Complete house painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Exterior Painting</h3>
+                        <p class="text-gray-600 text-sm">Weather-resistant premium finishes</p>
+                    </div>
+                </div>
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://static.readdy.ai/image/4aa709d1071c745a0f95e84e800a02b5/2fdc36c53bf0bb80f275d1345eaa6eba.jfif" alt="Bedroom Accent Wall" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Master Bedroom</h4>
+                            <p class="text-sm">Accent wall & interior painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Exterior - Before</h3>
+                        <p class="text-gray-600 text-sm">Custom color consultation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://static.readdy.ai/image/4aa709d1071c745a0f95e84e800a02b5/600119008684f95f42e1302f023e6284.jfif" alt="Bathroom Renovation" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Bathroom Refresh</h4>
+                            <p class="text-sm">Vanity & wall painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Exterior - Before</h3>
+                        <p class="text-gray-600 text-sm">Moisture-resistant coatings</p>
+                    </div>
+                </div>
+                <div class="portfolio-item residential bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://static.readdy.ai/image/4aa709d1071c745a0f95e84e800a02b5/d4b4a87773b644a5556a18f31636bf69.jfif" alt="Home Office Painting" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Home Office</h4>
+                            <p class="text-sm">Built-ins & trim painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Exterior Painting - After</h3>
+                        <p class="text-gray-600 text-sm">Professional workspace transformation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item commercial hidden bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20office%20building%20interior%20commercial%20painting%20project%20professional%20workspace%20with%20conference%20rooms%20painted%20walls%20corporate%20colors%20clean%20finish%20business%20environment%20quality%20commercial%20painting%20work&width=400&height=300&seq=com001&orientation=landscape" alt="Corporate Office Painting" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Corporate Office</h4>
+                            <p class="text-sm">Full building interior painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Office Complex</h3>
+                        <p class="text-gray-600 text-sm">Large-scale commercial project</p>
+                    </div>
+                </div>
+                <div class="portfolio-item commercial hidden bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=beautiful%20restaurant%20interior%20commercial%20painting%20project%20with%20custom%20colors%20modern%20dining%20space%20professional%20commercial%20painting%20work%20clean%20walls%20attractive%20ambiance%20business%20renovation%20quality%20finish&width=400&height=300&seq=com002&orientation=landscape" alt="Restaurant Interior" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Restaurant Design</h4>
+                            <p class="text-sm">Custom interior painting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Restaurant Interior</h3>
+                        <p class="text-gray-600 text-sm">Commercial dining space renovation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item commercial hidden bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=retail%20store%20interior%20commercial%20painting%20project%20with%20clean%20white%20walls%20professional%20finish%20bright%20lighting%20modern%20retail%20space%20commercial%20renovation%20quality%20painting%20work%20business%20environment&width=400&height=300&seq=com003&orientation=landscape" alt="Retail Store Painting" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-semibold mb-1">Retail Space</h4>
+                            <p class="text-sm">Store renovation project</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 mb-2">Retail Store</h3>
+                        <p class="text-gray-600 text-sm">Commercial retail painting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Transform Your Space?</h3>
+                <p class="text-gray-600 mb-8">Contact us today for a free consultation and quote</p>
+                <button class="bg-secondary hover:bg-yellow-600 text-white px-8 py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105">
+                    <i class="ri-phone-line mr-2"></i>Get Free Quote
+                </button>
+            </div>
         </div>
     </section>
-
     <!-- Process Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Our Proven Process</h2>
-            <p class="text-center mb-5">From consultation to completion, we follow a systematic approach to ensure exceptional results every time</p>
-            <div class="row">
-                <div class="col-md-3 process-step">
-                    <h3 class="gold">1</h3>
-                    <h4>Free Consultation</h4>
-                    <p>We visit your property to assess the project scope, discuss your vision, and provide expert recommendations tailored to your needs and budget.</p>
+    <section class="py-24 px-4 lg:px-8 bg-gradient-to-br from-blue-50 to-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-primary mb-6">Our Proven Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From consultation to completion, we follow a systematic approach to ensure exceptional results every time</p>
+                <div class="brushstroke-divider w-24 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-full mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                            <i class="ri-search-line text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Free Consultation</h3>
+                    <p class="text-gray-600">We visit your property to assess the project scope, discuss your vision, and provide expert recommendations tailored to your needs and budget.</p>
                 </div>
-                <div class="col-md-3 process-step">
-                    <h3 class="gold">2</h3>
-                    <h4>Detailed Quote</h4>
-                    <p>Receive a comprehensive, transparent quote with no hidden fees. We break down materials, labor, and timeline so you know exactly what to expect.</p>
+                <div class="text-center group">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-full mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                            <i class="ri-file-text-line text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Detailed Quote</h3>
+                    <p class="text-gray-600">Receive a comprehensive, transparent quote with no hidden fees. We break down materials, labor, and timeline so you know exactly what to expect.</p>
                 </div>
-                <div class="col-md-3 process-step">
-                    <h3 class="gold">3</h3>
-                    <h4>Professional Preparation</h4>
-                    <p>Our team carefully prepares surfaces, protects your furniture and flooring, and ensures proper ventilation for optimal results.</p>
+                <div class="text-center group">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-full mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                            <i class="ri-tools-line text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Professional Preparation</h3>
+                    <p class="text-gray-600">Our team carefully prepares surfaces, protects your furniture and flooring, and ensures proper ventilation for optimal results.</p>
                 </div>
-                <div class="col-md-3 process-step">
-                    <h3 class="gold">4</h3>
-                    <h4>Expert Application</h4>
-                    <p>Using premium paints and professional techniques, we deliver flawless finishes while maintaining clean, organized workspaces throughout.</p>
+                <div class="text-center group">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-blue-600 rounded-full mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                            <i class="ri-brush-line text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Expert Application</h3>
+                    <p class="text-gray-600">Using premium paints and professional techniques, we deliver flawless finishes while maintaining clean, organized workspaces throughout.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">About Celestial Painting Inc.</h2>
-            <p class="text-center mb-4">Founded in 2010, Celestial Painting Inc. has been transforming homes and businesses across Brampton, Toronto, and Ontario with unmatched craftsmanship and dedication to quality.</p>
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <h4>Licensed & Insured Professionals</h4>
-                    <p>Our team consists of fully licensed, bonded, and insured painting professionals with extensive training and certifications.</p>
+    <section id="about" class="py-24 px-4 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold text-primary mb-8">About Celestial Painting Inc.</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Founded in 2010, Celestial Painting Inc. has been transforming homes and businesses across Brampton, Toronto, and Ontario with unmatched craftsmanship and dedication to quality.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-secondary text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Licensed & Insured Professionals</h4>
+                                <p class="text-gray-600">Our team consists of fully licensed, bonded, and insured painting professionals with extensive training and certifications.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-secondary text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Premium Materials Only</h4>
+                                <p class="text-gray-600">We exclusively use top-tier paints from Sherwin-Williams, Benjamin Moore, and other premium brands for lasting results.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-secondary text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Satisfaction Guarantee</h4>
+                                <p class="text-gray-600">Every project comes with our comprehensive satisfaction guarantee and 5-year warranty on workmanship.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button id="scheduleConsultationBtn" class="bg-secondary hover:bg-yellow-600 text-white px-8 py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105">
+                            <i class="ri-phone-line mr-2"></i>Schedule Consultation
+                        </button>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Premium Materials Only</h4>
-                    <p>We exclusively use top-tier paints from Sherwin-Williams, Benjamin Moore, and other premium brands for lasting results.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Satisfaction Guarantee</h4>
-                    <p>Every project comes with our comprehensive satisfaction guarantee and 5-year warranty on workmanship.</p>
-                </div>
-            </div>
-            <img src="team-placeholder.jpg" alt="Celestial Painting Team" class="img-fluid mb-4"> <!-- Replace with actual team image -->
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h4 class="gold">15+</h4>
-                    <p>Years of Excellence</p>
-                </div>
-                <div class="stat-item">
-                    <h4 class="gold">Serving</h4>
-                    <p>Ontario Communities</p>
+                <div class="relative">
+                    <img src="https://static.readdy.ai/image/4aa709d1071c745a0f95e84e800a02b5/cd49cf6b434ddc54834b8d2b6176cb7e.jfif" alt="Celestial Painting Team" class="rounded-2xl shadow-2xl object-cover object-top w-full h-96">
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
+                        <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                        <div class="text-gray-600 font-medium">Years of Excellence</div>
+                        <div class="text-secondary text-sm mt-1">Serving Ontario Communities</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- FAQ Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Frequently Asked Questions</h2>
-            <p class="text-center">Get answers to common questions about our painting services</p>
-            <!-- The original content has no specific FAQs listed, so this section is left as a placeholder. Add content as needed. -->
+    <section class="py-20 px-4 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Get answers to common questions about our painting services</p>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 hover:bg-gray-50 transition-colors duration-300 shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer faq-header" data-faq="1">
+                        <h3 class="text-lg font-semibold text-gray-800">How long does a typical painting project take?</h3>
+                        <i class="ri-add-line text-2xl text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Project timelines vary based on size and complexity. A standard interior room typically takes 1-2 days, while whole-house exteriors may take 3-5 days. We provide detailed timelines during consultation and always strive to complete projects on schedule.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover:bg-gray-50 transition-colors duration-300 shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer faq-header" data-faq="2">
+                        <h3 class="text-lg font-semibold text-gray-800">What type of paint do you use?</h3>
+                        <i class="ri-add-line text-2xl text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>We exclusively use premium paints from trusted brands like Sherwin-Williams and Benjamin Moore. These high-quality paints provide superior coverage, durability, and color retention, ensuring your investment lasts for years to come.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover:bg-gray-50 transition-colors duration-300 shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer faq-header" data-faq="3">
+                        <h3 class="text-lg font-semibold text-gray-800">Do you provide free estimates?</h3>
+                        <i class="ri-add-line text-2xl text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Yes! We provide completely free, no-obligation estimates for all projects. Our detailed quotes include materials, labor, timeline, and any additional services needed. There are never any hidden fees or surprise costs.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover:bg-gray-50 transition-colors duration-300 shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer faq-header" data-faq="4">
+                        <h3 class="text-lg font-semibold text-gray-800">Are you licensed and insured?</h3>
+                        <i class="ri-add-line text-2xl text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>Absolutely. Celestial Painting Inc. is fully licensed, bonded, and insured with comprehensive liability coverage. This protects both your property and our team, giving you complete peace of mind throughout your project.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover:bg-gray-50 transition-colors duration-300 shadow-md">
+                    <div class="flex items-center justify-between cursor-pointer faq-header" data-faq="5">
+                        <h3 class="text-lg font-semibold text-gray-800">What's included in your warranty?</h3>
+                        <i class="ri-add-line text-2xl text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content hidden mt-4 text-gray-600">
+                        <p>We offer a comprehensive 5-year warranty on all workmanship and a satisfaction guarantee. If any issues arise due to our workmanship, we'll return to fix them at no charge. We stand behind our work 100%.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
     <!-- Testimonials Section -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">What Our Clients Say</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Celestial Painting transformed our entire home. The attention to detail and professionalism was outstanding. They completed the project on time and within budget. Our neighbors keep asking who did the work!"</p>
-                        <p><strong>Sarah Mitchell</strong><br>Homeowner, Brampton, ON</p>
+    <section class="py-20 px-4 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"Celestial Painting transformed our entire home. The attention to detail and professionalism was outstanding. They completed the project on time and within budget. Our neighbors keep asking who did the work!"</p>
+                    <div class="font-medium text-gray-800">Sarah Mitchell</div>
+                    <div class="text-sm text-gray-500">Homeowner, Brampton, ON</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"We hired them for our office renovation and couldn't be happier. The team was professional, clean, and delivered exceptional results. Zero disruption to our business operations. Highly recommended!"</p>
-                        <p><strong>Michael Thompson</strong><br>Business Owner, Toronto, ON</p>
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"We hired them for our office renovation and couldn't be happier. The team was professional, clean, and delivered exceptional results. Zero disruption to our business operations. Highly recommended!"</p>
+                    <div class="font-medium text-gray-800">Michael Thompson</div>
+                    <div class="text-sm text-gray-500">Business Owner, Toronto, ON</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"The quality of work exceeded our expectations. From the initial consultation to project completion, everything was handled with utmost professionalism. The warranty and follow-up service is exceptional."</p>
-                        <p><strong>Jennifer MacDonald</strong><br>Property Manager, Mississauga, ON</p>
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"The quality of work exceeded our expectations. From the initial consultation to project completion, everything was handled with utmost professionalism. The warranty and follow-up service is exceptional."</p>
+                    <div class="font-medium text-gray-800">Jennifer MacDonald</div>
+                    <div class="text-sm text-gray-500">Property Manager, Mississauga, ON</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Amazing cabinet refinishing work! They transformed our dated kitchen into a modern masterpiece. The attention to detail and clean-up was impeccable. Worth every penny."</p>
-                        <p><strong>David Chen</strong><br>Homeowner, Markham, ON</p>
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"Amazing cabinet refinishing work! They transformed our dated kitchen into a modern masterpiece. The attention to detail and clean-up was impeccable. Worth every penny."</p>
+                    <div class="font-medium text-gray-800">David Chen</div>
+                    <div class="text-sm text-gray-500">Homeowner, Markham, ON</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Professional exterior painting service that completely transformed our home's curb appeal. The team was punctual, courteous, and the results speak for themselves. Highly satisfied!"</p>
-                        <p><strong>Lisa Rodriguez</strong><br>Homeowner, Vaughan, ON</p>
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"Professional exterior painting service that completely transformed our home's curb appeal. The team was punctual, courteous, and the results speak for themselves. Highly satisfied!"</p>
+                    <div class="font-medium text-gray-800">Lisa Rodriguez</div>
+                    <div class="text-sm text-gray-500">Homeowner, Vaughan, ON</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p>"Excellent commercial painting service for our retail location. They worked around our business hours and delivered outstanding results. The space looks fantastic and our customers love it!"</p>
-                        <p><strong>Robert Kumar</strong><br>Store Owner, Richmond Hill, ON</p>
+                <div class="bg-white rounded-xl shadow-lg border border-secondary/20 p-8">
+                    <div class="flex mb-4">
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
+                        <i class="ri-star-fill text-secondary"></i>
                     </div>
+                    <p class="text-gray-600 mb-6">"Excellent commercial painting service for our retail location. They worked around our business hours and delivered outstanding results. The space looks fantastic and our customers love it!"</p>
+                    <div class="font-medium text-gray-800">Robert Kumar</div>
+                    <div class="text-sm text-gray-500">Store Owner, Richmond Hill, ON</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Form Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-5 gold">Get Your Free Quote</h2>
-            <form action="your-form-handler.php" method="post"> <!-- Replace action with your form handler if available -->
-                <div class="mb-3">
-                    <textarea class="form-control" rows="5" maxlength="500" placeholder="Enter your message here..."></textarea>
-                    <small>0/500 characters</small> <!-- You can add JS to update character count dynamically if desired -->
+    <!-- Consultation Modal -->
+    <div id="consultationModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary mb-2">Schedule Your Free Consultation</h2>
+                        <p class="text-gray-600">Let's discuss your painting project and provide you with expert recommendations</p>
+                    </div>
+                    <button id="closeModalBtn" class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
                 </div>
-                <button type="submit" class="btn" style="background-color: #FFD700; color: #001233;">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Contact Information -->
-    <section class="section bg-light">
-        <div class="container">
-            <h3 class="text-center mb-4 gold">Contact Information</h3>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-3 mb-3">
-                    <strong>Phone</strong><br>
-                    647 853 1757
-                </div>
-                <div class="col-md-3 mb-3">
-                    <strong>Email</strong><br>
-                    celestial.painting.inc@gmail.com
-                </div>
-                <div class="col-md-3 mb-3">
-                    <strong>Service Areas</strong><br>
-                    Brampton, Toronto & Ontario
-                </div>
-                <div class="col-md-3 mb-3">
-                    <strong>Business Hours</strong><br>
-                    Monday - Friday: 7:00 AM - 6:00 PM<br>
-                    Saturday: 8:00 AM - 4:00 PM<br>
-                    Sunday: Closed
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Celestial Painting Inc. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+                <form id="consultationForm" class="space-y-6" action="https://formspree.io/f/mqaydqpq" method="POST" enctype="multipart/form-data">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" name="fullName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Type *</label>
+                        <select name="projectType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm pr-8">
+                            <option value="">Select Project Type</option>
+                            <option value="Interior Residential">Interior Residential</option>
+                            <option value="Exterior Residential">Exterior Residential</option>
+                            <option value="Commercial Interior">Commercial Interior</option>
+                            <option value="Commercial Exterior">Commercial Exterior</option>
+                            <option value="Cabinet Refinishing">Cabinet Refinishing</option>
+                            <option value="Specialty Finishes">Specialty Finishes</option>
+                            <option value="Not Sure">Not Sure - Need Consultation</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Consultation Method *</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 consultation-method">
+                                <input type="radio" name="consultationMethod" value="In-Person Visit" required class="sr-only">
+                                <div class="w-6 h-6 flex items-center justify-center border-2 border-gray-300 rounded-full mr-3 method-radio">
+                                    <div class="w-3 h-3 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-800">In-Person Visit</div>
+                                    <div class="text-sm text-gray-600">Free on-site assessment</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 consultation-method">
+                                <input type="radio" name="consultationMethod" value="Phone Consultation" required class="sr-only">
+                                <div class="w-6 h-6 flex items-center justify-center border-2 border-gray-300 rounded-full mr-3 method-radio">
+                                    <div class="w-3 h-3 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-800">Phone Call</div>
+                                    <div class="text-sm text-gray-600">Detailed phone discussion</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 consultation-method">
+                                <input type="radio" name="consultationMethod" value="Video Call" required class="sr-only">
+                                <div class="w-6 h-6 flex items-center justify-center border-2 border-gray-300 rounded-full mr-3 method-radio">
+                                    <div class="w-3 h-3 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-800">Video Call</div>
+                                    <div class="text-sm text-gray-600">Virtual consultation</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date *</label>
+                            <input type="date" name="preferredDate" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" min="">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time *</label>
+                            <select name="preferredTime" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm pr-8">
+                                <option value="">Select Time</option>
+                                <option value="Morning (8:00 AM - 11:00 AM)">Morning (8:00 AM - 11:00 AM)</option>
+                                <option value="Afternoon (11:00 AM - 2:00 PM)">Afternoon (11:00 AM - 2:00 PM)</option>
+                                <option value="Early Evening (2:00 PM - 5:00 PM)">Early Evening (2:00 PM - 5:00 PM)</option>
+                                <option value="Evening (5:00 PM - 7:00 PM)">Evening (5:00 PM - 7:00 PM)</option>
+                                <option value="Flexible - Call Me">Flexible - Call Me</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Urgency</label>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 urgency-option">
+                                <input type="radio" name="urgency" value="ASAP" class="sr-only">
+                                <div class="w-4 h-4 flex items-center justify-center border-2 border-gray-300 rounded-full mr-2 urgency-radio">
+                                    <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <span class="text-sm">ASAP</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 urgency-option">
+                                <input type="radio" name="urgency" value="Within 2 weeks" class="sr-only">
+                                <div class="w-4 h-4 flex items-center justify-center border-2 border-gray-300 rounded-full mr-2 urgency-radio">
+                                    <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <span class="text-sm">Within 2 weeks</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 urgency-option">
+                                <input type="radio" name="urgency" value="Within 1 month" class="sr-only">
+                                <div class="w-4 h-4 flex items-center justify-center border-2 border-gray-300 rounded-full mr-2 urgency-radio">
+                                    <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <span class="text-sm">Within 1 month</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 urgency-option">
+                                <input type="radio" name="urgency" value="Planning ahead" class="sr-only">
+                                <div class="w-4 h-4 flex items-center justify-center border-2 border-gray-300 rounded-full mr-2 urgency-radio">
+                                    <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                </div>
+                                <span class="text-sm">Planning ahead</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                        <textarea name="projectDetails" placeholder="Tell us about your project, room size, current condition, color preferences, timeline, etc." rows="4" maxlength="500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none"></textarea>
+                        <div class="text-right text-xs text-gray-500 mt-1">
+                            <span id="modalCharCount">0</span>/500 characters
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Upload Images or Files</label>
+                        <input type="file" name="files[]" multiple accept=".jpg,.jpeg,.png,.pdf,.xlsx" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                    </div>
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="ri-information-line text-blue-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-medium text-blue-900 mb-1">What to Expect</h4>
+                                <ul class="text-sm text-blue-800 space-y-1">
+                                    <li>• Free detailed assessment and color consultation</li>
+                                    <li>• Transparent pricing with no hidden fees</li>
+                                    <li>• Professional recommendations for your project</li>
+                                    <li>• Timeline discussion and scheduling flexibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_replyto" value="celestial.painting.inc@gmail.com">
+                    <input type="hidden" name="_subject" value="New Consultation Request - Celestial Painting">
+                    <input type="hidden" name="form_type" value="consultation_scheduling">
+                    <input type="text" name="_gotcha" style="display : none;" aria-hidden="true">
+<button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white py-3 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap transform hover:scale-105 highlight-form">
+Submit Request 
+</button>
