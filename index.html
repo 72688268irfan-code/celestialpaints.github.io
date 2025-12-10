@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+
+  <script>
+    (async () => {
+      try {
+        const res = await fetch("https://ipapi.co/country/");
+        const country = (await res.text()).trim();
+
+        if (country === "CA") {
+          window.location.replace("/home.html");   // Canada page
+        } else {
+          window.location.replace("/index5.html"); // Outside Canada
+        }
+
+      } catch (error) {
+        window.location.replace("/index5.html");   // Fallback
+      }
+    })();
+  </script>
+</head>
+<body></body>
+</html>
